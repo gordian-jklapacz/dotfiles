@@ -1,5 +1,12 @@
+# vi: ft=zsh
 [[ "$(command -v exa)" ]] && alias ls="exa -lah"
 [[ "$(command -v bat)" ]] && alias cat="bat"
 [[ "$(command -v nvim)" ]] && alias vim="nvim"
 alias e=vim
+
+## Git aliases
+alias gst="git status"
+alias gsw="git switch"
+alias gcm="git commit -m"
+alias grb="git rebase -i"
 
