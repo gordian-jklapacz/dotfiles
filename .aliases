@@ -1,0 +1,5 @@
+[[ "$(command -v exa)" ]] && alias ls="exa -lah"
+[[ "$(command -v bat)" ]] && alias cat="bat"
+[[ "$(command -v nvim)" ]] && alias vim="nvim"
+alias e=vim
+
