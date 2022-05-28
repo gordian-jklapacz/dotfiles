@@ -1,0 +1,8 @@
+# vi: ft=zsh
+# Otravo DL
+task_id=${1:?task_id needed}
+dest=/tmp/repro/$task_id
+
+mkdir -p $dest
+aws s3 sync s3://content-repro-test/$task_id $dest/
+
